@@ -66,12 +66,6 @@
   </url>
   
   <url>
-    <loc>http://michelia.github.io/404/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://michelia.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
