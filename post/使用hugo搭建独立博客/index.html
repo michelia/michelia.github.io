@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>使用Hugo搭建独立博客 - Michelia</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Michelia" />
+  <meta name="description" content="概述 Hugo是一款使用 Go 编写的静态网站生成工具，和Hexo相比最大的两个优势是: 1. 静态页面的生成速度极快 2. Hugo安装极其简单 安装 Hugo 直接下载" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.26" />
+
+
+<link rel="canonical" href="http://michelia.github.io/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.min.css?v=2.5.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="使用Hugo搭建独立博客" />
+<meta property="og:description" content="概述 Hugo是一款使用 Go 编写的静态网站生成工具，和Hexo相比最大的两个优势是: 1. 静态页面的生成速度极快 2. Hugo安装极其简单 安装 Hugo 直接下载" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://michelia.github.io/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/" />
+
+
+
+<meta property="article:published_time" content="2017-09-07T15:37:51&#43;08:00"/>
+<meta property="article:modified_time" content="2017-09-07T15:37:51&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="使用Hugo搭建独立博客">
+<meta itemprop="description" content="概述 Hugo是一款使用 Go 编写的静态网站生成工具，和Hexo相比最大的两个优势是: 1. 静态页面的生成速度极快 2. Hugo安装极其简单 安装 Hugo 直接下载">
+
+
+<meta itemprop="dateModified" content="2017-09-07T15:37:51&#43;08:00" />
+<meta itemprop="wordCount" content="407">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="使用Hugo搭建独立博客"/>
+<meta name="twitter:description" content="概述 Hugo是一款使用 Go 编写的静态网站生成工具，和Hexo相比最大的两个优势是: 1. 静态页面的生成速度极快 2. Hugo安装极其简单 安装 Hugo 直接下载"/>
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Michelia</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Michelia</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">使用Hugo搭建独立博客</h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017-09-07
+        </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#概述">概述</a></li>
+<li><a href="#安装-hugo">安装 Hugo</a></li>
+<li><a href="#使用-hugo">使用 Hugo</a>
+<ul>
+<li><a href="#建立站点">建立站点</a></li>
+<li><a href="#创建文章">创建文章</a></li>
+<li><a href="#挑选主题">挑选主题</a></li>
+<li><a href="#运行hugo服务">运行Hugo服务</a></li>
+<li><a href="#部署">部署</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h1 id="概述">概述</h1>
+
+<p><code>Hugo</code>是一款使用 Go 编写的静态网站生成工具，和<code>Hexo</code>相比最大的两个优势是:<br />
+1. 静态页面的生成速度极快
+2. <code>Hugo</code>安装极其简单</p>
+
+<h1 id="安装-hugo">安装 Hugo</h1>
+
+<p>直接下载即可使用(得益于Golang语言编译包的特性)<br />
+<a href="https://github.com/spf13/hugo/releases">https://github.com/spf13/hugo/releases</a> (版本: 0.26)<br />
+记得把执行文件加入<code>PATH</code>中, 推荐Windows用户使用<a href="http://cmder.net/">Cmder</a>终端.</p>
+
+<h1 id="使用-hugo">使用 Hugo</h1>
+
+<h2 id="建立站点">建立站点</h2>
+
+<p><code>hugo new site /path/to/blog</code></p>
+
+<h2 id="创建文章">创建文章</h2>
+
+<p><code>cd /path/to/blog</code><br />
+创建 about.md<br />
+<code>hugo new about.md</code><br />
+创建其他博文<br />
+<code>hugo new post/博文.md</code></p>
+
+<h2 id="挑选主题">挑选主题</h2>
+
+<p>进入 <a href="https://themes.gohugo.io/tags/blog/">https://themes.gohugo.io/tags/blog/</a> 挑选自己喜欢的主题<br />
+<code>git clone https://github.com/olOwOlo/hugo-theme-even themes/even</code><br />
+我使用<code>even</code>, 依照 <a href="https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md">https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md</a> 配置.
+还有参考 <a href="https://github.com/ahonn/hexo-theme-even/wiki">https://github.com/ahonn/hexo-theme-even/wiki</a></p>
+
+<h2 id="运行hugo服务">运行Hugo服务</h2>
+
+<p><code>hugo server --theme=even --buildDrafts</code><br />
+以上，theme 用于指定主题名，buildDrafts 用于运行 build 草稿，watch 用于监控文件的改动。<br />
+启动完毕后可以在浏览器中输入以下命令观察生成的站点<br />
+<a href="http://localhost:1313">http://localhost:1313</a></p>
+
+<h2 id="部署">部署</h2>
+
+<p><code>hugo --theme=even --baseUrl=&quot;http://michelia.github.io/&quot;</code><br />
+注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 draft=true 再重新生成</p>
+
+<p>如果一切顺利，所有静态页面都会生成到 public 目录，将pubilc目录里所有文件 push 到刚创建的Repository的 master 分支。</p>
+
+<p><a href="https://github.com/jojomi/docker-hugo">https://github.com/jojomi/docker-hugo</a>
+cd /e/Dev/Blog
+docker run -i -t &ndash;rm -P -e HUGO_WATCH=t -e HUGO_THEME=hyde-x -v e:/Dev/Blog/:/src -p 1313:1313 jojomi/hugo</p>
+
+<p><a href="http://git.bookislife.com/post/2015/how-to-use-hugo/">http://git.bookislife.com/post/2015/how-to-use-hugo/</a>
+<a href="http://www.jianshu.com/p/bdba60260f4d">http://www.jianshu.com/p/bdba60260f4d</a></p>
+
+<p>mkdir data/ layouts/ static/</p>
+
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/data_visual/mongodb-note/">
+            <span class="next-text nav-default">MongoDB Note And Pandas</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+      </div>  
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+        <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+  <a href="http://michelia.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2014 - 
+    2017
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Michelia</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=2.5.0"></script>
+
+<script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+
+
+
+</body>
+</html>

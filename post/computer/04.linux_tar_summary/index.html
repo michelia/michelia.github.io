@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>linux压缩/解压命令总结 - Michelia</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Michelia" />
+  <meta name="description" content="常用压缩命令总结 .zip 解压：unzip FileName.zip 压缩：zip FileName.zip DirName 文件夹 zip -r FileName.zip DirName -q：静默模式，不打印解压信息
+.tar 解包：tar xvf FileName.tar 打包：tar cvf FileName.tar DirName （注：tar是打包，不是压缩！）
+.gz 解压1：gunzip FileName.gz zcat 等于 gunzip -c 将压缩文件扩展到标准输出。 解压2：gzip -d FileName.gz 压缩：gzip FileName " />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.26" />
+
+
+<link rel="canonical" href="http://michelia.github.io/post/computer/04.linux_tar_summary/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.min.css?v=2.5.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="linux压缩/解压命令总结" />
+<meta property="og:description" content="常用压缩命令总结
+
+.zip
+
+解压：unzip FileName.zip
+压缩：zip FileName.zip DirName
+文件夹  zip -r FileName.zip DirName
+-q：静默模式，不打印解压信息
+
+.tar
+
+解包：tar xvf FileName.tar
+打包：tar cvf FileName.tar DirName
+（注：tar是打包，不是压缩！）
+
+.gz
+
+解压1：gunzip FileName.gz
+zcat 等于 gunzip -c 将压缩文件扩展到标准输出。
+解压2：gzip -d FileName.gz
+压缩：gzip FileName
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://michelia.github.io/post/computer/04.linux_tar_summary/" />
+
+
+
+<meta property="article:published_time" content="2014-02-23T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2014-02-23T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="linux压缩/解压命令总结">
+<meta itemprop="description" content="常用压缩命令总结
+
+.zip
+
+解压：unzip FileName.zip
+压缩：zip FileName.zip DirName
+文件夹  zip -r FileName.zip DirName
+-q：静默模式，不打印解压信息
+
+.tar
+
+解包：tar xvf FileName.tar
+打包：tar cvf FileName.tar DirName
+（注：tar是打包，不是压缩！）
+
+.gz
+
+解压1：gunzip FileName.gz
+zcat 等于 gunzip -c 将压缩文件扩展到标准输出。
+解压2：gzip -d FileName.gz
+压缩：gzip FileName
+">
+
+
+<meta itemprop="dateModified" content="2014-02-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="388">
+
+
+
+<meta itemprop="keywords" content="tar,zip," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="linux压缩/解压命令总结"/>
+<meta name="twitter:description" content="常用压缩命令总结
+
+.zip
+
+解压：unzip FileName.zip
+压缩：zip FileName.zip DirName
+文件夹  zip -r FileName.zip DirName
+-q：静默模式，不打印解压信息
+
+.tar
+
+解包：tar xvf FileName.tar
+打包：tar cvf FileName.tar DirName
+（注：tar是打包，不是压缩！）
+
+.gz
+
+解压1：gunzip FileName.gz
+zcat 等于 gunzip -c 将压缩文件扩展到标准输出。
+解压2：gzip -d FileName.gz
+压缩：gzip FileName
+"/>
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Michelia</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Michelia</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">linux压缩/解压命令总结</h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2014-02-23
+        </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#常用压缩命令总结">常用压缩命令总结</a>
+<ul>
+<li><a href="#zip">.zip</a></li>
+<li><a href="#tar">.tar</a></li>
+<li><a href="#gz">.gz</a></li>
+<li><a href="#tar-gz-和-tgz">.tar.gz 和 .tgz</a></li>
+<li><a href="#bz2">.bz2</a></li>
+<li><a href="#tar-bz2">.tar.bz2</a></li>
+<li><a href="#tar-xz">.tar.xz</a></li>
+<li><a href="#bz">.bz</a></li>
+<li><a href="#tar-bz">.tar.bz</a></li>
+<li><a href="#z">.Z</a></li>
+<li><a href="#tar-z">.tar.Z</a></li>
+<li><a href="#rar">.rar</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h1 id="常用压缩命令总结">常用压缩命令总结</h1>
+
+<h2 id="zip">.zip</h2>
+
+<p>解压：unzip FileName.zip
+压缩：zip FileName.zip DirName
+文件夹  zip -r FileName.zip DirName
+-q：静默模式，不打印解压信息</p>
+
+<h2 id="tar">.tar</h2>
+
+<p>解包：tar xvf FileName.tar
+打包：tar cvf FileName.tar DirName
+（注：tar是打包，不是压缩！）</p>
+
+<h2 id="gz">.gz</h2>
+
+<p>解压1：gunzip FileName.gz
+zcat 等于 gunzip -c 将压缩文件扩展到标准输出。
+解压2：gzip -d FileName.gz
+压缩：gzip FileName
+</p>
+
+<h2 id="tar-gz-和-tgz">.tar.gz 和 .tgz</h2>
+
+<p>解压：tar zxvf FileName.tar.gz
+压缩：tar zcvf FileName.tar.gz DirName</p>
+
+<h2 id="bz2">.bz2</h2>
+
+<p>解压1：bzip2 -d FileName.bz2
+解压2：bunzip2 FileName.bz2
+压缩： bzip2 -z FileName</p>
+
+<h2 id="tar-bz2">.tar.bz2</h2>
+
+<p>解压：tar jxvf FileName.tar.bz2
+压缩：tar jcvf FileName.tar.bz2 DirName</p>
+
+<h2 id="tar-xz">.tar.xz</h2>
+
+<p>解压：tar -Jxvf FileName.tar.xz
+压缩：tar -Jcvf FileName.tar.xz DirName</p>
+
+<h2 id="bz">.bz</h2>
+
+<p>解压1：bzip2 -d FileName.bz
+解压2：bunzip2 FileName.bz
+压缩：未知</p>
+
+<h2 id="tar-bz">.tar.bz</h2>
+
+<p>解压：tar jxvf FileName.tar.bz
+压缩：未知</p>
+
+<h2 id="z">.Z</h2>
+
+<p>解压：uncompress FileName.Z
+压缩：compress FileName</p>
+
+<h2 id="tar-z">.tar.Z</h2>
+
+<p>解压：tar Zxvf FileName.tar.Z
+压缩：tar Zcvf FileName.tar.Z DirName</p>
+
+<h2 id="rar">.rar</h2>
+
+<p>解压：rar x FileName.rar
+压缩：rar a FileName.rar DirName</p>
+
+<p>参考链接：<a href="http://www.cnblogs.com/eoiioe/archive/2008/09/20/1294681.html">http://www.cnblogs.com/eoiioe/archive/2008/09/20/1294681.html</a></p>
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/tar/">tar</a>
+          
+          <a href="/tags/zip/">zip</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/computer/02-simple-http-server/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">简单易用的HTTPServer服务器</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+      </div>  
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+        <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+  <a href="http://michelia.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2014 - 
+    2017
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Michelia</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=2.5.0"></script>
+
+<script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+
+
+
+</body>
+</html>

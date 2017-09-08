@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://michelia.github.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://michelia.github.io/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2017-09-07T15:37:51+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/data_visual/mongodb-note/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/data_visual/echarts-note/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/django/django-doc-tutorial/</loc>
+    <lastmod>2015-10-05T11:52:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/django/django-model-form/</loc>
+    <lastmod>2015-09-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/django/django-model/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/computer/03-method-of-use-google-no-agent/</loc>
+    <lastmod>2014-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/computer/02-simple-http-server/</loc>
+    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/computer/04.linux_tar_summary/</loc>
+    <lastmod>2014-02-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/404/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/database/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/django/</loc>
+    <lastmod>2015-10-05T11:52:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/echarts/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/form/</loc>
+    <lastmod>2015-09-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/google/</loc>
+    <lastmod>2014-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/hosts/</loc>
+    <lastmod>2014-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/</loc>
+    <lastmod>2017-09-07T15:37:51+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/mongodb/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/orm/</loc>
+    <lastmod>2015-09-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/pandas/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/post/</loc>
+    <lastmod>2017-09-07T15:37:51+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/python/</loc>
+    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/server/</loc>
+    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/tar/</loc>
+    <lastmod>2014-02-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/zip/</loc>
+    <lastmod>2014-02-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2015-10-05T11:52:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://michelia.github.io/categories/%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2015-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

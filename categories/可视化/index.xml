@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>可视化 on Michelia</title>
+    <link>http://michelia.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+    <description>Recent content in 可视化 on Michelia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 23 Oct 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://michelia.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>echarts note</title>
+      <link>http://michelia.github.io/post/data_visual/echarts-note/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/post/data_visual/echarts-note/</guid>
+      <description>&lt;h1 id=&#34;加载主题&#34;&gt;加载主题&lt;/h1&gt;
+
+&lt;h2 id=&#34;内置主题&#34;&gt;内置主题&lt;/h2&gt;
+
+&lt;p&gt;内置主题 macarons 和 infographic 直接传入名称即可
+如：&lt;code&gt;myCharts = echarts.init(document.getElementById(&#39;main&#39;), &#39;macarons&#39;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;扩展主题&#34;&gt;扩展主题&lt;/h2&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

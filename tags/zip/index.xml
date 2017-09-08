@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zip on Michelia</title>
+    <link>http://michelia.github.io/tags/zip/</link>
+    <description>Recent content in Zip on Michelia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 23 Feb 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://michelia.github.io/tags/zip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux压缩/解压命令总结</title>
+      <link>http://michelia.github.io/post/computer/04.linux_tar_summary/</link>
+      <pubDate>Sun, 23 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/post/computer/04.linux_tar_summary/</guid>
+      <description>&lt;h1 id=&#34;常用压缩命令总结&#34;&gt;常用压缩命令总结&lt;/h1&gt;
+
+&lt;h2 id=&#34;zip&#34;&gt;.zip&lt;/h2&gt;
+
+&lt;p&gt;解压：unzip FileName.zip
+压缩：zip FileName.zip DirName
+文件夹  zip -r FileName.zip DirName
+-q：静默模式，不打印解压信息&lt;/p&gt;
+
+&lt;h2 id=&#34;tar&#34;&gt;.tar&lt;/h2&gt;
+
+&lt;p&gt;解包：tar xvf FileName.tar
+打包：tar cvf FileName.tar DirName
+（注：tar是打包，不是压缩！）&lt;/p&gt;
+
+&lt;h2 id=&#34;gz&#34;&gt;.gz&lt;/h2&gt;
+
+&lt;p&gt;解压1：gunzip FileName.gz
+zcat 等于 gunzip -c 将压缩文件扩展到标准输出。
+解压2：gzip -d FileName.gz
+压缩：gzip FileName
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

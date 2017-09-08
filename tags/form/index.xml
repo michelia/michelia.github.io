@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Form on Michelia</title>
+    <link>http://michelia.github.io/tags/form/</link>
+    <description>Recent content in Form on Michelia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://michelia.github.io/tags/form/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>django model 与 form 相关知识点</title>
+      <link>http://michelia.github.io/post/django/django-model-form/</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/post/django/django-model-form/</guid>
+      <description>&lt;h1 id=&#34;form知识点总结&#34;&gt;form知识点总结&lt;/h1&gt;
+
+&lt;h2 id=&#34;modelform显示关联字段&#34;&gt;ModelForm显示关联字段&lt;/h2&gt;
+
+&lt;p&gt;ModelForm与Model很是不同。ModelForm终归是Form。因为Form只是表单，和数据库结合的很弱，所以就不能直接像Model一样，使用&lt;code&gt;__&lt;/code&gt;、&lt;code&gt;_set&lt;/code&gt;或&lt;code&gt;.&lt;/code&gt;取值。但Django中还是提供了显示的方法，使用&lt;code&gt;initial&lt;/code&gt;。
+方法：
+- 在Form中定义一个和Model不相关的Field，然后在&lt;code&gt;bound&lt;/code&gt;Form的时候，给参数&lt;code&gt;initial&lt;/code&gt;字典数据（包含不相关字段的数据），这样就可以动态的显示相应字段了。
+- 对于&lt;code&gt;bound&lt;/code&gt;的Form实例，可以使用像&lt;code&gt;form.fields[&#39;email&#39;].initial = self.org_obj.user.email&lt;/code&gt;的方法，也可以动态在前端显示字段的值。
+&lt;code&gt;form.helper[&#39;email&#39;].update_attributes(readonly=True)&lt;/code&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

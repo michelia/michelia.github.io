@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>django入门教程资料 - Michelia</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Michelia" />
+  <meta name="description" content="网上关于Django资料真的是太多了，如何甄别资料显得更加重要了。 学习并使用Django最有效的方法就是阅读官网文档https://docs.djangoproject.com/，的确是最有效的方法，没有之一。Django Doc比出版的书籍都讲的明了。 可能有的童鞋有发问了，可我的英文很差，拜托Django Doc的语法很简单的，单词也都是计算机的单词，不需要四级英语。这篇博文如何阅读Django的文档是启蒙博文，那是博主亲身实践的经验，我们就不要再走弯路了。 " />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.26" />
+
+
+<link rel="canonical" href="http://michelia.github.io/post/django/django-doc-tutorial/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.min.css?v=2.5.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="django入门教程资料" />
+<meta property="og:description" content="网上关于Django资料真的是太多了，如何甄别资料显得更加重要了。
+学习并使用Django最有效的方法就是阅读官网文档https://docs.djangoproject.com/，的确是最有效的方法，没有之一。Django Doc比出版的书籍都讲的明了。
+可能有的童鞋有发问了，可我的英文很差，拜托Django Doc的语法很简单的，单词也都是计算机的单词，不需要四级英语。这篇博文如何阅读Django的文档是启蒙博文，那是博主亲身实践的经验，我们就不要再走弯路了。
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://michelia.github.io/post/django/django-doc-tutorial/" />
+
+
+
+<meta property="article:published_time" content="2015-10-05T11:52:50&#43;00:00"/>
+<meta property="article:modified_time" content="2015-10-05T11:52:50&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="django入门教程资料">
+<meta itemprop="description" content="网上关于Django资料真的是太多了，如何甄别资料显得更加重要了。
+学习并使用Django最有效的方法就是阅读官网文档https://docs.djangoproject.com/，的确是最有效的方法，没有之一。Django Doc比出版的书籍都讲的明了。
+可能有的童鞋有发问了，可我的英文很差，拜托Django Doc的语法很简单的，单词也都是计算机的单词，不需要四级英语。这篇博文如何阅读Django的文档是启蒙博文，那是博主亲身实践的经验，我们就不要再走弯路了。
+
+">
+
+
+<meta itemprop="dateModified" content="2015-10-05T11:52:50&#43;00:00" />
+<meta itemprop="wordCount" content="245">
+
+
+
+<meta itemprop="keywords" content="django," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="django入门教程资料"/>
+<meta name="twitter:description" content="网上关于Django资料真的是太多了，如何甄别资料显得更加重要了。
+学习并使用Django最有效的方法就是阅读官网文档https://docs.djangoproject.com/，的确是最有效的方法，没有之一。Django Doc比出版的书籍都讲的明了。
+可能有的童鞋有发问了，可我的英文很差，拜托Django Doc的语法很简单的，单词也都是计算机的单词，不需要四级英语。这篇博文如何阅读Django的文档是启蒙博文，那是博主亲身实践的经验，我们就不要再走弯路了。
+
+"/>
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Michelia</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Michelia</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">django入门教程资料</h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2015-10-05
+        </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+          </div>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#参考">参考</a></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>网上关于Django资料真的是太多了，如何甄别资料显得更加重要了。
+学习并使用Django最有效的方法就是阅读官网文档<a href="https://docs.djangoproject.com/">https://docs.djangoproject.com/</a>，的确是最有效的方法，没有之一。Django Doc比出版的书籍都讲的明了。
+可能有的童鞋有发问了，可我的英文很差，拜托Django Doc的语法很简单的，单词也都是计算机的单词，不需要四级英语。这篇博文<a href="http://www.the5fire.com/how-to-read-django-docs.html"><strong>如何阅读Django的文档</strong></a>是启蒙博文，那是博主亲身实践的经验，我们就不要再走弯路了。
+
+<!-- <br> --></p>
+
+<h1 id="参考">参考</h1>
+
+<ul>
+<li><a href="http://www.the5fire.com/how-to-read-django-docs.html">如何阅读Django的文档</a></li>
+</ul>
+
+<!-- - [手把手教你用xadmin替换django自带的admin模块](http://www.the5fire.com/replace-django-admin-with-xadmin-step-by-step.html)
+- [在django中如何自定义widget（控件）适用于xadmin](http://www.the5fire.com/customize-widget-in-django.html) -->
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/django/">django</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/data_visual/echarts-note/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">echarts note</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/django/django-model-form/">
+            <span class="next-text nav-default">django model 与 form 相关知识点</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+      </div>  
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+        <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+  <a href="http://michelia.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2014 - 
+    2017
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Michelia</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=2.5.0"></script>
+
+<script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+
+
+
+</body>
+</html>

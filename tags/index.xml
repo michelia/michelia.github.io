@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Michelia</title>
+    <link>http://michelia.github.io/tags/</link>
+    <description>Recent content in Tags on Michelia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 23 Oct 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://michelia.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Database</title>
+      <link>http://michelia.github.io/tags/database/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>http://michelia.github.io/tags/django/</link>
+      <pubDate>Mon, 05 Oct 2015 11:52:50 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Echarts</title>
+      <link>http://michelia.github.io/tags/echarts/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/echarts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Form</title>
+      <link>http://michelia.github.io/tags/form/</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/form/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>http://michelia.github.io/tags/google/</link>
+      <pubDate>Thu, 23 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hosts</title>
+      <link>http://michelia.github.io/tags/hosts/</link>
+      <pubDate>Thu, 23 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/hosts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mongodb</title>
+      <link>http://michelia.github.io/tags/mongodb/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orm</title>
+      <link>http://michelia.github.io/tags/orm/</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/orm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>http://michelia.github.io/tags/pandas/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://michelia.github.io/tags/python/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server</title>
+      <link>http://michelia.github.io/tags/server/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tar</title>
+      <link>http://michelia.github.io/tags/tar/</link>
+      <pubDate>Sun, 23 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/tar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zip</title>
+      <link>http://michelia.github.io/tags/zip/</link>
+      <pubDate>Sun, 23 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/zip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>可视化</title>
+      <link>http://michelia.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

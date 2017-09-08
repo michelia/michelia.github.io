@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on Michelia</title>
+    <link>http://michelia.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on Michelia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Oct 2015 11:52:50 +0000</lastBuildDate>
+    
+	<atom:link href="http://michelia.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>django入门教程资料</title>
+      <link>http://michelia.github.io/post/django/django-doc-tutorial/</link>
+      <pubDate>Mon, 05 Oct 2015 11:52:50 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/post/django/django-doc-tutorial/</guid>
+      <description>&lt;p&gt;网上关于Django资料真的是太多了，如何甄别资料显得更加重要了。
+学习并使用Django最有效的方法就是阅读官网文档&lt;a href=&#34;https://docs.djangoproject.com/&#34;&gt;https://docs.djangoproject.com/&lt;/a&gt;，的确是最有效的方法，没有之一。Django Doc比出版的书籍都讲的明了。
+可能有的童鞋有发问了，可我的英文很差，拜托Django Doc的语法很简单的，单词也都是计算机的单词，不需要四级英语。这篇博文&lt;a href=&#34;http://www.the5fire.com/how-to-read-django-docs.html&#34;&gt;&lt;strong&gt;如何阅读Django的文档&lt;/strong&gt;&lt;/a&gt;是启蒙博文，那是博主亲身实践的经验，我们就不要再走弯路了。
+
+&lt;!-- &lt;br&gt; --&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>django model 与 form 相关知识点</title>
+      <link>http://michelia.github.io/post/django/django-model-form/</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/post/django/django-model-form/</guid>
+      <description>&lt;h1 id=&#34;form知识点总结&#34;&gt;form知识点总结&lt;/h1&gt;
+
+&lt;h2 id=&#34;modelform显示关联字段&#34;&gt;ModelForm显示关联字段&lt;/h2&gt;
+
+&lt;p&gt;ModelForm与Model很是不同。ModelForm终归是Form。因为Form只是表单，和数据库结合的很弱，所以就不能直接像Model一样，使用&lt;code&gt;__&lt;/code&gt;、&lt;code&gt;_set&lt;/code&gt;或&lt;code&gt;.&lt;/code&gt;取值。但Django中还是提供了显示的方法，使用&lt;code&gt;initial&lt;/code&gt;。
+方法：
+- 在Form中定义一个和Model不相关的Field，然后在&lt;code&gt;bound&lt;/code&gt;Form的时候，给参数&lt;code&gt;initial&lt;/code&gt;字典数据（包含不相关字段的数据），这样就可以动态的显示相应字段了。
+- 对于&lt;code&gt;bound&lt;/code&gt;的Form实例，可以使用像&lt;code&gt;form.fields[&#39;email&#39;].initial = self.org_obj.user.email&lt;/code&gt;的方法，也可以动态在前端显示字段的值。
+&lt;code&gt;form.helper[&#39;email&#39;].update_attributes(readonly=True)&lt;/code&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>django model 和 查询 知识点</title>
+      <link>http://michelia.github.io/post/django/django-model/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/post/django/django-model/</guid>
+      <description>&lt;p&gt;多表关联查询 - 计算机的世界主要就是操作数据，所以orm一定要使用好
+学习使用Django，重要的一块就orm。
+初次使用感觉总体还是很好用的。主要是Django的文档比较全。
+只要多看看文档，一切问题还是都能解决的。
+对于初学者而言，其中最难的就是多表关联查询，以及列表或group返回关联查询的结果。
+差不多用了一天的时间，粗略看了Django关于model的文档，真是大而全呀。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Michelia</title>
+    <link>http://michelia.github.io/tags/python/</link>
+    <description>Recent content in Python on Michelia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://michelia.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>简单易用的HTTPServer服务器</title>
+      <link>http://michelia.github.io/post/computer/02-simple-http-server/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/post/computer/02-simple-http-server/</guid>
+      <description>&lt;h1 id=&#34;使用&#34;&gt;使用&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;python -m SimpleHTTPServer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上面的命令就是在当前目录中建立HTTPServer服务器
+如果当前目录下有一个叫 &lt;code&gt;index.html&lt;/code&gt; 的文件名的文件，那么这个文件就会成为一个默认页，如果没有这个文件，那么，目录列表就会显示出来。
+浏览器打开&lt;code&gt;0.0.0.0:8000&lt;/code&gt; 或 &lt;code&gt;localhost:8000&lt;/code&gt; 或 &lt;code&gt;本机ip地址:8000&lt;/code&gt;即可使用。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

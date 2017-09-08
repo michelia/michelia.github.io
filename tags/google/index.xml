@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Michelia</title>
+    <link>http://michelia.github.io/tags/google/</link>
+    <description>Recent content in Google on Michelia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://michelia.github.io/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>不翻墙使用google大神的方法</title>
+      <link>http://michelia.github.io/post/computer/03-method-of-use-google-no-agent/</link>
+      <pubDate>Thu, 23 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://michelia.github.io/post/computer/03-method-of-use-google-no-agent/</guid>
+      <description>&lt;p&gt;要说互联网最离不开的工具，这无需置疑就是搜索引擎了，所以我们怎么能离开google大神呢。但因为众所周知的原因，大.陆无法直接使用google。比较彻底的解决方法是使用VPN，但VPN太专业又繁琐。对于只需要使用google搜索服务的网友，根本没有必要使用花钱的VPN。&lt;/p&gt;
+
+&lt;p&gt;这里介绍的方法非常&lt;strong&gt;简单便捷&lt;/strong&gt;，就是修改hosts文件。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
